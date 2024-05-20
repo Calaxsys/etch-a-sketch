@@ -59,3 +59,7 @@ body {
     background-color: #04AA60;
     cursor: pointer
 }
+
+#buttons-area {
+    margin: 0 auto;
+}

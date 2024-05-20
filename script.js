@@ -31,6 +31,13 @@ function removeCells() {
     }
 }
 
+slider.oninput = function () {
+    let txt = `${this.value} x ${this.value}`;
+    sliderValue.innerHTML = txt;
+    removeCells();
+    populateSketchArea(this.value);
+}
+
 function changeColor() {
     this.style.backgroundColor = "black";
 }
