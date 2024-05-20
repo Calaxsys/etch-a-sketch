@@ -4,15 +4,15 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: slategray;
 }
 
 #sketchPad {
     display: flex;
-    margin: 100px auto 0 auto;
+    margin: 15px auto 15px auto;
     background-color: white;
     flex-wrap: wrap;
-    
+    border: 3px solid black;
 }
 
 .cell {
@@ -21,6 +21,8 @@ body {
 
 #slider-container {
     margin: 0 auto;
+    width: 45%;
+    margin: 25px auto 0 auto;
 }
 
 .slider {
@@ -42,6 +44,7 @@ body {
 
 .slider:hover {
     opacity: 1;
+    pointer-events: none;
 }
 
 .slider::-webkit-slider-thumb {
@@ -60,6 +63,29 @@ body {
     cursor: pointer
 }
 
-#buttons-area {
+.title {
+    font-size: 32px;
     margin: 0 auto;
+}
+
+.title-container {
+    display: flex;
+    margin: 25px auto 0 auto;
+}
+
+#buttons-area {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#sketchPad, #black-btn, #eraser-btn, #slider-container {
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    user-select: none; 
 }
